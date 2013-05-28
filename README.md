@@ -1,4 +1,4 @@
 openresty-deb
 =============
 
-debian stuff for Openresty (http://openresty.org)
+Debian/Ubuntu debian/ directory for Openresty (http://openresty.org)

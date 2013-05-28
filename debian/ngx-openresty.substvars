@@ -1,0 +1,2 @@
+shlibs:Depends=libc6 (>= 2.14), libpcre3 (>= 8.10), libreadline6 (>= 6.0), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.1.4)
+misc:Depends=
