@@ -1,3 +1,9 @@
+ngx-openresty (1.2.7.8-1prezi1+syslog) precise; urgency=low
+
+  * add syslog
+
+ -- endre <endre.hirling@prezi.com>  Wed, 05 Jun 2013 22:49:26 +0000
+
 ngx-openresty (1.2.7.8-1) unstable; urgency=low
 
   * Initial release

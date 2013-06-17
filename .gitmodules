@@ -1,0 +1,3 @@
+[submodule "debian/patches/nginx_syslog_patch"]
+	path = debian/patches/nginx_syslog_patch
+	url = https://github.com/yaoweibin/nginx_syslog_patch
