@@ -31,7 +31,7 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
-	patch -f -N -d bundle/nginx-1.2.8 -p1 < debian/patches/nginx_syslog_patch/syslog_1.2.7.patch
+	patch -N -d bundle/nginx-1.2.8 -p1 < debian/patches/nginx_syslog_patch/syslog_1.2.7.patch
 	./configure $(CROSS) --add-module=$(CURDIR)/debian/patches/nginx_syslog_patch --prefix=/opt/ngx-openresty --with-cc-opt="$(CFLAGS)" --with-ld-opt="-Wl,-z,defs"
 	touch $@
 
@@ -55,7 +55,6 @@ clean:
 	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) clean
 	rm -f config.sub config.guess config.status
-	patch -t -R -d bundle/nginx-1.2.8 -p1 < debian/patches/nginx_syslog_patch/syslog_1.2.7.patch
 
 	dh_clean 
 
