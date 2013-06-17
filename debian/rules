@@ -31,7 +31,7 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
-        patch -p1 < debian/patches/nginx_syslog_patch/syslog_1.2.7.patch
+	patch -d bundle/nginx-1.2.8 -p1 < debian/patches/nginx_syslog_patch/syslog_1.2.7.patch
 	./configure $(CROSS) --add-module=$(CURDIR)/debian/patches/nginx_syslog_patch --prefix=/opt/ngx-openresty --with-cc-opt="$(CFLAGS)" --with-ld-opt="-Wl,-z,defs"
 
 
