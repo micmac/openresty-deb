@@ -1,3 +1,9 @@
+ngx-openresty (1.2.8.6-1prezi1+syslog) precise; urgency=low
+
+  * update to 1.2.8.6 
+
+ -- root <root@mba>  Mon, 17 Jun 2013 21:11:20 +0000
+
 ngx-openresty (1.2.7.8-1prezi1+syslog) precise; urgency=low
 
   * add syslog
